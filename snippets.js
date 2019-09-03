@@ -7,3 +7,9 @@ const NewPathObject = startingLetter => {
   //   pathObject.push(findMatchingPointsFromLetter("C"));
   console.log(pathObject);
 };
+
+const create2ndPathArraySplit = newPathArray => {
+  let individualArray = createNewPathArray(newPathArray)[0];
+  let secondPath = createNewPathArray(individualArray[0]);
+  return secondPath;
+};
